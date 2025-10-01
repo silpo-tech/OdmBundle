@@ -1,0 +1,79 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^PHPDoc tag @SuppressWarnings has invalid value \(\(PHPMD\.UnusedFormalParameter\)\)\: Unexpected token "\.UnusedFormalParameter\)", expected ''\)'' at offset 34 on line 2$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/DependencyInjection/ODMExtension.php
+
+		-
+			message: '#^PHPDoc tag @SuppressWarnings has invalid value \(\(PHPMD\.UnusedFormalParameter\)\)\: Unexpected token "\.UnusedFormalParameter\)", expected ''\)'' at offset 34 on line 2$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Document/Generator/RamseyUuidGenerator.php
+
+		-
+			message: '#^Cannot call method toArray\(\) on array\<string, mixed\>\|int\|object\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Paginator/BuilderAwarePaginator.php
+
+		-
+			message: '#^Expression on left side of \?\? is not nullable\.$#'
+			identifier: nullCoalesce.expr
+			count: 1
+			path: src/Request/FilterValueResolver.php
+
+		-
+			message: '#^Parameter \#2 \$callback of function array_filter expects \(callable\(mixed\)\: bool\)\|null, Closure\(mixed\)\: \(array\<mixed, mixed\>\|int\<0, max\>\) given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Request/FilterValueResolver.php
+
+		-
+			message: '#^Access to an undefined property Symfony\\Component\\Validator\\Constraint\:\:\$ignoreNull\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Validator/Constraint/AbstractOdmValidator.php
+
+		-
+			message: '#^Instanceof between ODMBundle\\Validator\\Constraint\\OdmConstraint and ODMBundle\\Validator\\Constraint\\OdmConstraint will always evaluate to true\.$#'
+			identifier: instanceof.alwaysTrue
+			count: 1
+			path: src/Validator/Constraint/AbstractOdmValidator.php
+
+		-
+			message: '#^Parameter \#2 \$constraint of method ODMBundle\\Validator\\Constraint\\AbstractOdmValidator\:\:getCriteria\(\) expects ODMBundle\\Validator\\Constraint\\OdmConstraint, Symfony\\Component\\Validator\\Constraint given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Validator/Constraint/AbstractOdmValidator.php
+
+		-
+			message: '#^Parameter \#2 \$constraint of method ODMBundle\\Validator\\Constraint\\AbstractOdmValidator\:\:getResult\(\) expects ODMBundle\\Validator\\Constraint\\OdmConstraint, Symfony\\Component\\Validator\\Constraint given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Validator/Constraint/AbstractOdmValidator.php
+
+		-
+			message: '#^Parameter \#2 \$constraint of method ODMBundle\\Validator\\Constraint\\AbstractOdmValidator\:\:performValidation\(\) expects ODMBundle\\Validator\\Constraint\\OdmConstraint, Symfony\\Component\\Validator\\Constraint given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Validator/Constraint/AbstractOdmValidator.php
+
+		-
+			message: '#^PHPDoc tag @SuppressWarnings has invalid value \(\(PHPMD\.CyclomaticComplexity\)\)\: Unexpected token "\.CyclomaticComplexity\)", expected ''\)'' at offset 34 on line 2$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Validator/Constraint/ValidDateRangeValidator.php
+
+		-
+			message: '#^PHPDoc tag @SuppressWarnings has invalid value \(\(PHPMD\.NPathComplexity\)\)\: Unexpected token "\.NPathComplexity\)", expected ''\)'' at offset 87 on line 3$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Validator/Constraint/ValidDateRangeValidator.php
+
+		-
+			message: '#^Property ODMBundle\\Validator\\Constraint\\AbstractOdmValidator@anonymous/tests/Validator/AbstractOdmValidatorTest\.php\:36\:\:\$dm is never read, only written\.$#'
+			identifier: property.onlyWritten
+			count: 1
+			path: tests/Validator/AbstractOdmValidatorTest.php
