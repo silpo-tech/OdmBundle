@@ -32,5 +32,16 @@
     }
   },
   "minimum-stability": "stable",
-  "prefer-stable": true
+  "prefer-stable": true,
+  "scripts": {
+    "test:ci": [
+      "@test:coverage"
+    ],
+    "test:coverage": {
+      "command": "APP_ENV=test php -d extension=pcov.so -d pcov.enabled=1 vendor/bin/phpunit --coverage-text --coverage-html ./reports/coverage --colors=never --coverage-cobertura=./reports/coverage/cobertura.xml --coverage-clover=./reports/coverage/clover.xml --log-junit=./reports/coverage/junit.xml"
+    },
+    "test:run": [
+      "APP_ENV=test php vendor/bin/phpunit --color=always"
+    ]
+  }
 }
