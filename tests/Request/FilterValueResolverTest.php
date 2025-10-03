@@ -9,7 +9,7 @@ use ODMBundle\Attribute\OdmFilterMapper;
 use ODMBundle\Request\FilterValueResolver;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
-use SilpoTech\ExceptionHandlerBundle\Exception\ValidationException;
+use ExceptionHandlerBundle\Exception\ValidationException;
 use Symfony\Component\HttpFoundation\InputBag;
 use Symfony\Component\HttpFoundation\ParameterBag;
 use Symfony\Component\HttpFoundation\Request;

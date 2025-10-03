@@ -6,7 +6,7 @@ namespace ODMBundle\Request;
 
 use MapperBundle\Mapper\MapperInterface;
 use ODMBundle\Attribute\OdmFilterMapper;
-use SilpoTech\ExceptionHandlerBundle\Exception\ValidationException;
+use ExceptionHandlerBundle\Exception\ValidationException;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Controller\ValueResolverInterface;
 use Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadata;

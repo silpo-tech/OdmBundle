@@ -14,9 +14,9 @@
     "symfony/property-access": "^7.0",
     "symfony/http-kernel": "^7.0",
     "ramsey/uuid": "^4.2",
-    "silpo-tech/exception-handler-bundle": "^1.0",
+    "silpo-tech/exception-handler-bundle": "^2.0",
     "silpo-tech/mapper-bundle": "^1.0",
-    "silpo-tech/rest-bundle": "^1.0"
+    "silpo-tech/rest-bundle": "^2.0"
   },
   "require-dev": {
     "phpstan/phpstan": "^2.1",
