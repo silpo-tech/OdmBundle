@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace ODMBundle\Request;
 
+use ExceptionHandlerBundle\Exception\ValidationException;
 use MapperBundle\Mapper\MapperInterface;
 use ODMBundle\Attribute\OdmFilterMapper;
-use ExceptionHandlerBundle\Exception\ValidationException;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Controller\ValueResolverInterface;
 use Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadata;

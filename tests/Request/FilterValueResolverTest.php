@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace ODMBundle\Tests\Request;
 
+use ExceptionHandlerBundle\Exception\ValidationException;
 use MapperBundle\Mapper\MapperInterface;
 use ODMBundle\Attribute\OdmFilterMapper;
 use ODMBundle\Request\FilterValueResolver;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
-use ExceptionHandlerBundle\Exception\ValidationException;
 use Symfony\Component\HttpFoundation\InputBag;
 use Symfony\Component\HttpFoundation\ParameterBag;
 use Symfony\Component\HttpFoundation\Request;
